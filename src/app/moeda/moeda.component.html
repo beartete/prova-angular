@@ -1,28 +1,35 @@
+<div class="box">
 <h1>Conversor de Real Para Dólar</h1>
 <div class="container">
   <div class="row">
     <div class="col-12">
       <div class="input-group mb-4">
         <div ngbDropdown class="d-inline-block">
-          <label>real </label>
+          <label for="">Digite quanto vale o dólar atualmente </label>
           <br>
+          <label for="">$</label>
           <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="primeiroNumero">
     </div>
-    <div class="col-12">
-      <label for="">digite quanto vale o dólar atualmente </label>
-      <br>
-      <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="segundoNumero">
-      <br>
+      <div class="col-12">
+        <label>Real </label>
+        <br>
+        <label for="">R$</label>
+          <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="segundoNumero">
+        <br>
     </div>
     </div>
       <div class="input-group mb-4">
         <div ngbDropdown class="d-inline-block"></div>
         </div>
+        <div>
         <button (click)="converter()">Calcular</button>
         <button (click)="limpar()">Limpar</button>
+      </div>
       </div>
       <hr>
       <label for="resultado">Resultado:</label>
       <br>
+      <label for="">R$</label>
       <input type="number" name="resultado" [value]="resultado" readonly>
     </div>
+  </div>
