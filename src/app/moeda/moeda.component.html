@@ -23,6 +23,7 @@
         </div>
         <div>
         <button (click)="converter()">Calcular</button>
+        <br>
         <button (click)="limpar()">Limpar</button>
       </div>
       </div>
@@ -33,3 +34,42 @@
       <input type="number" name="resultado" [value]="resultado" readonly>
     </div>
   </div>
+
+
+  <div class="box2">
+    <h1>Conversor de Dólar Para Real</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="input-group mb-4">
+            <div ngbDropdown class="d-inline-block">
+              <label>Real </label>
+              <br>
+              <label for="">R$</label>
+                <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="segundoNumero1">
+              <br>
+              <label for="">Digite quanto vale o dólar atualmente </label>
+              <br>
+              <label for="">$</label>
+              <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="primeiroNumero1">
+        </div>
+          <div class="col-12">
+
+        </div>
+        </div>
+          <div class="input-group mb-4">
+            <div ngbDropdown class="d-inline-block"></div>
+            </div>
+            <div>
+            <button (click)="converter2()">Calcular</button>
+            <br>
+            <button (click)="limpar2()">Limpar</button>
+          </div>
+          </div>
+          <hr>
+          <label for="resultado2">Resultado:</label>
+          <br>
+          <label for="">R$</label>
+          <input type="number" name="resultado2" [value]="resultado" readonly>
+        </div>
+      </div>

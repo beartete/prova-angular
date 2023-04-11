@@ -41,7 +41,7 @@ body {
       }
 
     .box {
-        background-color: #ffffff;
+        background-color: #f8f4d9;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 9px 20px rgba(0, 0, 0, 0.3);
@@ -54,6 +54,19 @@ body {
         justify-content: center;
         max-width: 350px;
         }
+
+        .box2 {
+          background-color: #f8f4d9;
+          padding: 2rem;
+          border-radius: 10px;
+          box-shadow: 0 9px 20px rgba(0, 0, 0, 0.3);
+          border: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 350px;
+          }
 
         label {
           display: block;

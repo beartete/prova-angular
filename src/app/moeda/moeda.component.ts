@@ -10,6 +10,10 @@ export class MoedaComponent {
   primeiroNumero: number = 0;
   segundoNumero: number = 0;
   resultado: number = 0;
+  primeiroNumero1: number = 0;
+  segundoNumero1: number = 0;
+  resultado1: number = 0;
+
 
 
    limpar() {
@@ -20,6 +24,18 @@ export class MoedaComponent {
  converter() {
       if(this.primeiroNumero !==0){
     this.resultado =  this.segundoNumero * this.primeiroNumero;
+    } else {
+        alert('Não é possível dividir por zero!');
+     }
+ }
+ limpar2() {
+  this.primeiroNumero = 0;
+  this.segundoNumero = 0;
+  this.resultado = 0;
+}
+ converter2() {
+  if(this.primeiroNumero !==0){
+    this.resultado =  this.segundoNumero / this.primeiroNumero;
     } else {
         alert('Não é possível dividir por zero!');
      }
