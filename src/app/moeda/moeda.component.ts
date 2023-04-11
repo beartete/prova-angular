@@ -18,17 +18,11 @@ converter: any;
     this.resultado = 0;
 
     converter(); {
-      switch (this.selectedOption1) {
-        case '1':
-          this.primeiroNumero = this.segundoNumero * 1000;
-          break;
-        case '2':
-          this.segundoNumero = this.primeiroNumero / 5.20;
-          break;
+      this.resultado = this.primeiroNumero * 5.20;
+      return;
       }
     }
   }
-}
 function converter() {
   throw new Error('Function not implemented.');
 }

@@ -4,19 +4,18 @@
       <div class="input-group mb-4">
         <div ngbDropdown class="d-inline-block">
           <h1>Conversor de Real Para Dólar</h1>
-          <input type="number">
-        </div>
-        <input type="number" class="form-control p-3" roboto-label="Text input with dropdown button " [(ngModel)]="primeiroNumero" (keyup)="converter()" placeholder="0">
-      </div>
+          <label>real </label>
+          <input type="number" roboto-label="Text input with dropdown button" [(ngModel)]="primeiroNumero">
     </div>
     <div class="col-12">
       <div class="input-group mb-4">
         <div ngbDropdown class="d-inline-block"></div>
         </div>
-        <input type="number" class="form-control p-3" roboto-label="Text input with dropdown button" [(ngModel)]="primeiroNumero" (keyup)='selectedOption1' placeholder="0">
         <button (click)="converter()">Calcular</button>
         <button (click)="limpar()">Limpar</button>
       </div>
       <hr>
-      <p *ngIf="">O valor será{{converter.toFixed(2)}}.</p>
+      <label for="resultado">Dólar:</label>
+      <br>
+      <input type="number" name="resultado" [value]="resultado" readonly>
     </div>
