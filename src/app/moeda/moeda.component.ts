@@ -13,19 +13,17 @@ export class MoedaComponent {
 converter: any;
 
   limpar() {
-    this.resultado = 0;
+    this.primeiroNumero = 0;
     this.segundoNumero = 0;
+    this.resultado = 0;
 
     converter(); {
       switch (this.selectedOption1) {
         case '1':
-          this.segundoNumero = this.primeiroNumero * 1000;
+          this.primeiroNumero = this.segundoNumero * 1000;
           break;
         case '2':
-          this.segundoNumero = this.primeiroNumero / 5,20;
-          break;
-        default:
-          this.segundoNumero = 0;
+          this.segundoNumero = this.primeiroNumero / 5.20;
           break;
       }
     }

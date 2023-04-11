@@ -3,22 +3,20 @@
     <div class="col-12">
       <div class="input-group mb-4">
         <div ngbDropdown class="d-inline-block">
-          <select class="form-select" aria-label="Default select example" [(ngModel)]="primeiroNumero" (click)="limpar()">
-            <option selected Disabled>Medida de entrada</option>
-            <option value="1">Real</option>
-            <option value="2">Dolar</option>
-          </select>
+          <h1>Conversor de Real Para Dólar</h1>
+          <input type="number">
         </div>
-        <input type="number" class="form-control p-3" aria-label="Text input with dropdown button " [(ngModel)]="primeiroNumero" (keyup)="converter()" placeholder="0">
+        <input type="number" class="form-control p-3" roboto-label="Text input with dropdown button " [(ngModel)]="primeiroNumero" (keyup)="converter()" placeholder="0">
       </div>
     </div>
     <div class="col-12">
       <div class="input-group mb-4">
-        <div ngbDropdown class="d-inline-block">
-          <select class="form-select" aria-label="Default select example" [(ngModel)]="segundoNumero" (click)="limpar()">
-            <option selected Disabled>Medida de saída</option>
-            <option value="1">Real</option>
-            <option value="2">Dolar</option>
-          </select>
+        <div ngbDropdown class="d-inline-block"></div>
         </div>
-        <input type="number" class="form-control p-3" aria-label="Text input with dropdown button" [(ngModel)]="primeiroNumero" (keyup)='selectedOption1' placeholder="0">
+        <input type="number" class="form-control p-3" roboto-label="Text input with dropdown button" [(ngModel)]="primeiroNumero" (keyup)='selectedOption1' placeholder="0">
+        <button (click)="converter()">Calcular</button>
+        <button (click)="limpar()">Limpar</button>
+      </div>
+      <hr>
+      <p *ngIf="">O valor será{{converter.toFixed(2)}}.</p>
+    </div>
